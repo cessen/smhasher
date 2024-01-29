@@ -97,6 +97,16 @@ HashInfo g_hashes[] =
 { sumhash,     	  32, 0x0000A9AC, "sumhash", 	 "sum all bytes", SKIP, {0UL} /* !! */ },
 { sumhash32,     	  32, 0x3D6DC280, "sumhash32",   "sum all 32bit words", SKIP, {0x9e3779b97f4a7c15} },
 
+// Not-for-real-use hash functions from the article "Hash Design and Goodhart's
+// Law".  Several are designed to trick SMHasher and appear high quality when
+// they're not.
+{ goodhart_hash_1_test,    128, 0xFE2D85A5, "GoodhartHash1",     "1st hash from \"Hash Design and Goodhart's Law\"", GOOD, {} },
+{ goodhart_hash_2_test,    128, 0x80A1D0A9, "GoodhartHash2",     "2nd hash from \"Hash Design and Goodhart's Law\"", GOOD, {} },
+{ goodhart_hash_3_test,    128, 0x6420097C, "GoodhartHash3",     "3rd hash from \"Hash Design and Goodhart's Law\"", GOOD, {} },
+{ goodhart_hash_4_test,    128, 0x26B59B28, "GoodhartHash4",     "4th hash from \"Hash Design and Goodhart's Law\"", GOOD, {} },
+{ goodhart_hash_5_test,    128, 0xF488F331, "GoodhartHash5",     "5th hash from \"Hash Design and Goodhart's Law\"", GOOD, {} },
+{ goodhart_hash_6_test,    128, 0x3CD62CF3, "GoodhartHash6",     "6th hash from \"Hash Design and Goodhart's Law\"", GOOD, {} },
+
 // here start the real hashes. first the problematic ones:
 #ifdef HAVE_BIT32
 #define FIBONACCI_VERIF      0x09952480

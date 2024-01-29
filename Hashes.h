@@ -30,6 +30,8 @@
 #include "jody_hash32.h"
 #include "jody_hash64.h"
 
+#include "goodhart_hash.h"
+
 // objsize: 0-0x113 = 276
 #include "tifuhash.h"
 // objsize: 5f0-85f = 623

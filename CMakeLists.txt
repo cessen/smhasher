@@ -717,6 +717,7 @@ add_library(
   ${UMASH_SRC}
   ${KHASHV_SRC}
   xmsx.c
+  goodhart_hash.cpp
   )
 
 add_executable(SMHasher main.cpp)
