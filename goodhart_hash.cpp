@@ -1,6 +1,6 @@
 // These are the hashes from the article "Hash Design and Goodhart's Law":
 //
-// TODO: url
+// https://blog.cessen.com/post/2024_07_10_hash_design_and_goodharts_law
 //
 // These hashes are NOT INTENDED FOR REAL USE, and in fact some of them are
 // specifically designed to pass typical empircal hash quality tests while still
